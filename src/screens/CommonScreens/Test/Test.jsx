@@ -62,7 +62,32 @@ const Test = () => {
 
   return (
     <div className={styles.mainCon}>
-      <Row className={styles.subCon}>
+
+      <div className={styles.subConHeader}>
+        <div className={styles.boxCont}>
+          <div className={styles.headerCont}>
+            <TextComponent
+              text={'Contact Details :'}
+              textClass={styles.heading}
+            />
+
+            <TextComponent
+              text={'Maaz Ul Haq'}
+              textClass={styles.contactText}
+            />
+            <TextComponent
+              text={'03482270539'}
+              textClass={styles.contactText}
+            />
+            <TextComponent
+              text={'Portfolio URL: https://maazuh.web.app/'}
+              textClass={styles.contactText}
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.subCon}>
         <div className={styles.box}>
           <div className={styles.inputs}>
             <TextComponent
@@ -95,11 +120,11 @@ const Test = () => {
               onChange={(e) => setParentheses(e.target.value)}
             />
             {Parentheses &&
-            <TextComponent
-              text={Parentheses && `A valid parentheses string ? : ${isValidParentheses(Parentheses)}`}
-              textClass={isValidParentheses(Parentheses) ? styles.subHeading : styles.subHeadingFalse}
-            />
-}
+              <TextComponent
+                text={Parentheses && `A valid parentheses string ? : ${isValidParentheses(Parentheses)}`}
+                textClass={isValidParentheses(Parentheses) ? styles.subHeading : styles.subHeadingFalse}
+              />
+            }
           </div>
         </div>
 
@@ -121,7 +146,7 @@ const Test = () => {
             />
           </div>
         </div>
-      </Row>
+      </div>
     </div>
   );
 };
