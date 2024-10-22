@@ -1,0 +1,56 @@
+.btn{
+  width: 100%;
+  background-color: var(--primary-color);
+  outline: 0;
+  border: 0;
+  border-radius: 50px;
+  padding: 12px 0;
+  cursor: pointer;
+  color: #fff;
+  border-bottom:  4px solid rgba(255,255,255,0.6);
+  opacity: 1;
+  transition: opacity 300ms ease;
+  font-family: var(--font-family);
+}
+
+.outlineBtn{
+  width: 100%;
+  background-color: var(--white2);
+  outline: 0;
+  border: 0;
+  border-radius: 50px;
+  padding: 12px 0;
+  cursor: pointer;
+  color: var(--primary-color);
+  border:  2px solid var(--primary-color);
+  opacity: 1;
+  transition: opacity 300ms ease;
+  font-family: var(--font-family);
+}
+
+.touchbtn{
+  width: 100%;
+  background-color: var(--primary-color);
+  outline: 0;
+  border: 0;
+  border-radius: 50px;
+  padding: 12px 0;
+  cursor: pointer;
+  color: #fff;
+  border-bottom:  4px solid rgba(255,255,255,0.6);
+  opacity: 0.5;
+  font-family: var(--font-family);
+}
+ /* .btnText{
+  color: var(--white2);
+  font-weight: bold;
+  font-family: var(--font-family);
+} */
+/*
+.btnTextOutline{
+  color: var(--btn-color);
+  font-weight: bold;
+} */
+/* .btnText{
+  font-size: var(--paragraph-font-size);
+} */
